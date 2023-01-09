@@ -1,0 +1,20 @@
+Note that you will have to scale the resulting disparity maps by integer factors (shown below) before submitting them. Also, we evaluate
+ disparities everywhere (except for a border region in the Tsukuba and Venus images), so if your method does not produce disparities in 
+some regions (e.g., borders, occlusion), you will have to come up with a way of extrapolating the disparities into those regions. 
+After submitting your images, your results will be compared to the other results in a temporary table. Once you have submitted all images, 
+you can request that your results be added to the permanent table. Note that we still require that your method is run with constant parameters on
+ all 4 image pairs, except for the disparity ranges. 
+
+
+All disparity images must be in png, pgm, or gif format. Disparities must be scaled by the integer factors shown below. 
+ Image pair    Disps.     Scale       
+ 
+Tsukuba 0..15 16  
+Venus 0..19 8  
+Teddy 0..59 4  
+Cones 0..59 4 
+
+[1] D. Scharstein and R. Szeliski. A taxonomy and evaluation of dense two-frame stereo correspondence algorithms.
+International Journal of Computer Vision, 47(1/2/3):7-42, April-June 2002.
+ 
+
